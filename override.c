@@ -19,4 +19,4 @@ int __libc_start_main(int (*main)(int, char **, char **), int argc, char **argv,
 
 // gcc -Wall -fPIC -DPIC -c override.c
 // ld -shared -o override.so override.o -ldl
-// LD_PRELOAD=./override.so cat override.c
+// LD_PRELOAD=./override.so ruby sleeper.rb
