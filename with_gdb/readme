@@ -1,0 +1,5 @@
+gdb -p [PID]
+set $dlopen = (void*(*)(char*, int)) dlopen
+call $dlopen("/path/to/library.so", 1)
+detach
+quit
